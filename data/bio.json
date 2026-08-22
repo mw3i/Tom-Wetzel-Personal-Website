@@ -9,17 +9,17 @@
     {
       "role": "Chief of Police",
       "organization": "University Circle Police Department",
-      "period": "[PLACEHOLDER — years, present]"
+      "period": "YYYY - Present"
     },
     {
       "role": "Chief of Police",
       "organization": "Richmond Heights Police Department",
-      "period": "[PLACEHOLDER — years]"
+      "period": "YYYY - YYYY"
     },
     {
       "role": "Lieutenant",
       "organization": "Beachwood Police Department",
-      "period": "[PLACEHOLDER — years]"
+      "period": "YYYY - YYYY"
     }
   ]
 }

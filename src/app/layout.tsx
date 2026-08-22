@@ -51,7 +51,7 @@ export default function RootLayout({
       lang="en"
       className={`h-full bg-navy-deep ${newsreader.variable} ${publicSans.variable}`}
     >
-      <body className="min-h-full bg-navy antialiased">
+      <body className="min-h-full bg-navy-deep antialiased">
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

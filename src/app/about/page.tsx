@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { PhotoBand } from "@/components/PhotoBand";
 import { Section } from "@/components/Section";
-import { getBio, getBook, getImage, getSite } from "@/lib/data";
+import { getBio, getImage, getSite } from "@/lib/data";
 import { createPageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
@@ -32,7 +31,6 @@ const offDuty = [
 export default function AboutPage() {
   const site = getSite();
   const bio = getBio();
-  const book = getBook();
   const teamPhoto = getImage("about-team");
 
   return (
@@ -129,23 +127,6 @@ export default function AboutPage() {
           })}
         </div>
       </Section>
-
-      {/* Book section */}
-      <PhotoBand imageKey="about-book-bg" alt="A Cop and a Coffee Cup">
-        <p className="section-label-onDark">The Book</p>
-        <h2 className="prose-heading mt-4 max-w-2xl text-3xl text-paper sm:text-4xl">
-          {book.title}
-        </h2>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
-          {book.shortDescription}
-        </p>
-        <Link
-          href="/"
-          className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-paper transition-colors hover:bg-badge-light"
-        >
-          Learn More About the Book
-        </Link>
-      </PhotoBand>
     </>
   );
 }

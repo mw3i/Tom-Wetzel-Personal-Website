@@ -25,7 +25,6 @@ export default function ArticlesPage() {
           Writing &amp; commentary
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
-          A collection of articles Tom has written.
         </p>
       </PhotoBand>
 

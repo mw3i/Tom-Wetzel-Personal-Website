@@ -49,8 +49,13 @@
   --font-body: var(--font-public-sans);
 }
 
-/* Dark navy so an elastic/rubber-band overscroll reveals the same blue as
-   the header and footer, instead of flashing white beyond the page content. */
+/*
+ * Both html and body are the dark navy — matching the header/footer — so an
+ * elastic/rubber-band overscroll reveals that color no matter which of the
+ * two elements a given browser sources the canvas background from. Body's
+ * own color is never actually visible in-bounds: every section (light or
+ * dark) paints its own background over the full page width.
+ */
 html {
   min-height: 100%;
   background-color: var(--color-navy-deep);
@@ -58,7 +63,7 @@ html {
 
 body {
   min-height: 100%;
-  background-color: var(--color-navy);
+  background-color: var(--color-navy-deep);
   color: var(--color-ink);
   font-family: var(--font-body), system-ui, sans-serif;
 }

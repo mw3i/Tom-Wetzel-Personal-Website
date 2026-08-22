@@ -24,7 +24,6 @@ export default function MediaPage() {
           News, podcasts &amp; interviews
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
-          Recent news appearances, podcast episodes, and interviews.
         </p>
       </PhotoBand>
 

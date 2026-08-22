@@ -8,7 +8,13 @@ const typeLabel: Record<MediaType, string> = {
   review: "Book Review",
 };
 
-export function MediaCard({ appearance }: { appearance: MediaAppearance }) {
+export function MediaCard({
+  appearance,
+  showType = true,
+}: {
+  appearance: MediaAppearance;
+  showType?: boolean;
+}) {
   return (
     <a
       href={appearance.url}
@@ -17,9 +23,11 @@ export function MediaCard({ appearance }: { appearance: MediaAppearance }) {
       className="group flex flex-col gap-3 py-6 transition-colors hover:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-badge-light sm:-mx-4 sm:flex-row sm:items-center sm:gap-6 sm:px-4"
     >
       <div className="flex items-center gap-3 sm:w-28 sm:shrink-0 sm:flex-col sm:items-start sm:gap-2">
-        <span className="rounded-full border border-badge-light/30 px-2.5 py-1 text-xs uppercase tracking-[0.15em] text-badge-light">
-          {typeLabel[appearance.type]}
-        </span>
+        {showType && (
+          <span className="rounded-full border border-badge-light/30 px-2.5 py-1 text-xs uppercase tracking-[0.15em] text-badge-light">
+            {typeLabel[appearance.type]}
+          </span>
+        )}
         <p className="text-xs text-steel">{formatDate(appearance.date)}</p>
       </div>
       <div className="min-w-0 flex-1">
