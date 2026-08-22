@@ -1,0 +1,282 @@
+{
+  "articles": [
+    {
+      "id": "policing-is-a-love-story",
+      "title": "Chief's Corner: Policing Is a Love Story",
+      "publication": "Police1",
+      "date": "2026-02-09",
+      "url": "https://www.police1.com/police-heroes/chiefs-corner-policing-is-a-love-story",
+      "excerpt": "On policing as an act of devotion — to the Constitution, to justice, and to the people officers serve, even at real personal cost.",
+      "featured": true,
+      "image": "/images/article-featured-museum.jpg"
+    },
+    {
+      "id": "police-keep-the-peace-protests",
+      "title": "Police Keep the Peace When Protests Ignite",
+      "publication": "Cleveland.com",
+      "date": "2025-01-05",
+      "url": "https://www.cleveland.com/opinion/2025/01/police-keep-the-peace-when-protests-ignite-tom-wetzel-and-denise-debiase.html",
+      "excerpt": "Co-authored with Denise DeBiase, on the role police play in keeping protests peaceful and lawful for everyone involved."
+    },
+    {
+      "id": "internal-stress-fractures",
+      "title": "The Impact of Internal Stress Fractures Within Police Departments",
+      "publication": "Blue Line Magazine",
+      "date": "2026-06-05",
+      "url": "https://www.blueline.ca/the-impact-of-internal-stress-fractures-within-police-departments/",
+      "excerpt": "Why the recruitment and retention crisis in policing traces back to leadership, not pay, and how servant leadership can restore departmental health.",
+      "featured": true,
+      "image": "/images/article-featured-fractures.jpg"
+    },
+    {
+      "id": "cleveland-recruitment-crisis",
+      "title": "The Recruitment Crisis Threatening Police Departments Starts at the Top",
+      "publication": "Cleveland.com",
+      "date": "2026-05-03",
+      "url": "https://www.cleveland.com/opinion/2026/05/the-recruitment-crisis-threatening-police-departments-starts-at-the-top-tom-wetzel.html",
+      "excerpt": "An opinion piece on why fixing the police staffing shortage starts with leadership, not recruiting budgets.",
+      "featured": true,
+      "image": "/images/article-featured-recruitment.jpg"
+    },
+    {
+      "id": "learning-from-those-who-wore-a-habit",
+      "title": "Learning From Those Who Wore a Habit",
+      "publication": "The Euclid Observer",
+      "date": "2026-08-01",
+      "url": "https://www.theeuclidobserver.com/articles/learning-from-those-who-wore-a-habit/",
+      "excerpt": "A personal reflection on the nuns who taught Tom at St. Felicitas School in Euclid, and the values they instilled."
+    },
+    {
+      "id": "command-meets-compassion",
+      "title": "When Command Meets Compassion: The Posture That Earns Trust",
+      "publication": "Police1",
+      "date": "2025-10-14",
+      "url": "https://www.police1.com/when-command-meets-compassion-the-posture-that-earns-trust",
+      "excerpt": "How officers can move between command presence and genuine compassion to de-escalate situations and build public trust."
+    },
+    {
+      "id": "off-duty-behavior",
+      "title": "Off-Duty Mistakes That Can End a Police Officer's Career",
+      "publication": "Police1",
+      "date": "2025-07-14",
+      "url": "https://www.police1.com/off-duty/off-duty-behavior-prevent-trouble-before-it-happens",
+      "excerpt": "On the off-duty risks that put careers in jeopardy, and how training and peer mentorship can help officers avoid them."
+    },
+    {
+      "id": "thinking-together-think-tanks",
+      "title": "Thinking Together: How Regional Police Think Tanks Drive Innovation",
+      "publication": "Police1",
+      "date": "2025-03-15",
+      "url": "https://www.police1.com/chiefs-sheriffs/thinking-together-how-regional-police-think-tanks-drive-innovation",
+      "excerpt": "How bringing officers from multiple agencies together for structured brainstorming sessions produces better solutions to shared problems."
+    },
+    {
+      "id": "cop-scouts-program",
+      "title": "Cop Scouts Program Inspires Youth and Strengthens Community Bonds",
+      "publication": "Police1",
+      "date": "2024-09-10",
+      "url": "https://www.police1.com/community-policing/cop-scouts-program-inspires-youth-and-strengthens-community-bonds",
+      "excerpt": "A blend of scouting and police mentoring designed to build trust between officers and kids ages 7–12."
+    },
+    {
+      "id": "police-ambassador-program",
+      "title": "University Circle Police Department Launches Innovative Police Ambassador Program",
+      "publication": "Police1",
+      "date": "2024-01-18",
+      "url": "https://www.police1.com/community-policing/university-circle-police-department-launches-innovative-police-ambassador-program",
+      "excerpt": "On UCPD's pilot program hiring people with intellectual disabilities and mental health challenges as part-time police ambassadors."
+    },
+    {
+      "id": "navigating-the-tightrope",
+      "title": "Navigating the Tightrope: Balancing Motivation and Discipline in Law Enforcement",
+      "publication": "Police1",
+      "date": "2023-11-07",
+      "url": "https://www.police1.com/chiefs-sheriffs/navigating-the-tightrope-balancing-motivation-and-discipline-in-law-enforcement",
+      "excerpt": "Finding the balance between supporting officers and holding them accountable — without tipping into leniency or rigidity."
+    },
+    {
+      "id": "all-squared-away",
+      "title": "All Squared Away: A Blueprint for Success in Policing",
+      "publication": "Police1",
+      "date": "2021-08-12",
+      "url": "https://www.police1.com/police-training/articles/all-squared-away-a-blueprint-for-success-in-policing-mSNoYOCShAiP3b9D/",
+      "excerpt": "A simple four-part framework — knowledge, accountability, ability, and work ethic — for coaching officers toward excellence."
+    },
+    {
+      "id": "b-to-an-a",
+      "title": "How to Move American Law Enforcement From a B- to an A+",
+      "publication": "Police1",
+      "date": "2021-06-04",
+      "url": "https://www.police1.com/chiefs-sheriffs/articles/how-to-move-american-law-enforcement-from-a-b-to-an-a-zkWfyO82ePgHz0qH/",
+      "excerpt": "On using collaborative think tanks and shared department experience to raise professional standards and rebuild public trust."
+    },
+    {
+      "id": "letter-officers-six",
+      "title": "A Letter to the American Public: We Need to Have Police Officers' 'Six'",
+      "publication": "Police1",
+      "date": "2020-03-24",
+      "url": "https://www.police1.com/health-fitness/articles/a-letter-to-the-american-public-we-need-to-have-police-officers-six-SifhoV1KnNfKaKo7/",
+      "excerpt": "Co-authored piece on the importance of peer support for officers dealing with trauma, addiction, and PTSD."
+    },
+    {
+      "id": "letter-public-safety-will-shine-police1",
+      "title": "A Letter to the American Public: Public Safety Will Shine During the COVID-19 Pandemic",
+      "publication": "Police1",
+      "date": "2020-03-16",
+      "url": "https://www.police1.com/coronavirus-covid-19/articles/a-letter-to-the-american-public-public-safety-will-shine-during-the-covid-19-pandemic-gAdu1WcYiuzh8Uzx/",
+      "excerpt": "On the courage and professionalism first responders showed serving their communities through the pandemic's early days."
+    },
+    {
+      "id": "7-police-tenets",
+      "title": "7 Police Tenets to Live By in 21 Words",
+      "publication": "Police1",
+      "date": "2020-03-01",
+      "url": "https://www.police1.com/police-jobs-and-careers/articles/7-police-tenets-to-live-by-in-21-words-6f8gGxNAaPyWQlHp/",
+      "excerpt": "Seven short, grounding principles for staying safe, motivated, and connected to purpose over a long career."
+    },
+    {
+      "id": "ferguson-effect",
+      "title": "4 Ways to Stave Off the 'Ferguson Effect'",
+      "publication": "Police1",
+      "date": "2016-06-29",
+      "url": "https://www.police1.com/community-policing/articles/4-ways-to-stave-off-the-ferguson-effect-4uKW3AVa82QDrPVh/",
+      "excerpt": "Four strategies for countering the pullback toward reactive policing that followed Ferguson, from mission-focus to community engagement."
+    },
+    {
+      "id": "traffic-enforcement-changes",
+      "title": "How 4 Bold Traffic Enforcement Changes Can Boost Police-Community Relations",
+      "publication": "Police1",
+      "date": "2015-12-03",
+      "url": "https://www.police1.com/chiefs-sheriffs/articles/how-4-bold-traffic-enforcement-changes-can-boost-police-community-relations-BmgVwA2Knr7GpC1d/",
+      "excerpt": "Proposed reforms to traffic enforcement aimed at improving road safety and easing the perception of officers as ticket-writers."
+    },
+    {
+      "id": "community-mentoring-program",
+      "title": "How to Create a Community Mentoring Program",
+      "publication": "Police1",
+      "date": "2015-03-10",
+      "url": "https://www.police1.com/police-jobs-and-careers/articles/how-to-create-a-community-mentoring-program-p1cz0Avvi4hS6uLm/",
+      "excerpt": "A five-step outline for pairing officers with at-risk youth through roll-call invitations, lunches, and home visits."
+    },
+    {
+      "id": "cleanup-on-aisle-four",
+      "title": "Cleanup on Aisle Four: Policing in America Today",
+      "publication": "POLICE Magazine",
+      "date": "2018-08-16",
+      "url": "https://www.policemag.com/blogposts/cleanup-on-aisle-four-policing-in-america-today",
+      "excerpt": "On how media coverage of the rare use-of-force incident crowds out the much larger, quieter work officers do every day."
+    },
+    {
+      "id": "restoring-the-dream",
+      "title": "Restoring the Dream",
+      "publication": "POLICE Magazine",
+      "date": "2013-09-05",
+      "url": "https://www.policemag.com/blogposts/restoring-the-dream",
+      "excerpt": "On rebuilding trust between police and minority communities through training, transparency, and genuine community policing."
+    },
+    {
+      "id": "empathetic-reminder-police-week",
+      "title": "An Empathetic Reminder During Police Week",
+      "publication": "POLICE Magazine",
+      "date": "2013-05-13",
+      "url": "https://www.policemag.com/blogposts/an-empathetic-reminder-during-police-week",
+      "excerpt": "During National Police Week, a case for leading with empathy as a way to build trust and keep officers safer."
+    },
+    {
+      "id": "alley-lights",
+      "title": "Adding Alley Lights to Police Cruisers",
+      "publication": "POLICE Magazine",
+      "date": "2013-03-20",
+      "url": "https://www.policemag.com/articles/adding-alley-lights-to-police-cruisers",
+      "excerpt": "A practical look at an underused piece of cruiser equipment and how it improves officer safety on night patrol."
+    },
+    {
+      "id": "last-ditch-impact-weapon-training",
+      "title": "Last-Ditch Impact Weapon Training",
+      "publication": "POLICE Magazine",
+      "date": "2012-12-20",
+      "url": "https://www.policemag.com/blogposts/last-ditch-impact-weapon-training",
+      "excerpt": "Emergency techniques for close-range confrontations when an officer's primary force tools are unavailable."
+    },
+    {
+      "id": "how-to-honor-fallen-officers",
+      "title": "How to Honor Fallen Officers",
+      "publication": "POLICE Magazine",
+      "date": "2012-12-05",
+      "url": "https://www.policemag.com/blogposts/how-to-honor-fallen-officers",
+      "excerpt": "On using the Officer Down Memorial Page during roll call as a teaching tool, honoring fallen officers while improving tactics."
+    },
+    {
+      "id": "defense-against-standing-choke-holds",
+      "title": "Defense Against Standing Choke Holds",
+      "publication": "POLICE Magazine",
+      "date": "2012-08-29",
+      "url": "https://www.policemag.com/articles/defense-against-standing-choke-holds",
+      "excerpt": "A training breakdown of defensive techniques for front, side, and rear choke attacks."
+    },
+    {
+      "id": "four-ways-trust-trayvon-martin",
+      "title": "Four Ways to Build Trust After Trayvon Martin",
+      "publication": "POLICE Magazine",
+      "date": "2012-04-06",
+      "url": "https://www.policemag.com/blogposts/four-ways-to-build-trust-after-trayvon-martin",
+      "excerpt": "Four proposed strategies for rebuilding trust with Black communities, from school programs to patrol reform and transparency."
+    },
+    {
+      "id": "surviving-foot-patrol",
+      "title": "Surviving Foot Patrol",
+      "publication": "POLICE Magazine",
+      "date": "2011-11-18",
+      "url": "https://www.policemag.com/articles/surviving-foot-patrol",
+      "excerpt": "Practical guidance for officers on foot patrol — gear, awareness, and building community relationships safely."
+    },
+    {
+      "id": "countering-in-car-attacks",
+      "title": "Countering In-Car Attacks",
+      "publication": "POLICE Magazine",
+      "date": "2011-06-20",
+      "url": "https://www.policemag.com/articles/countering-in-car-attacks",
+      "excerpt": "Tactical guidance for staying safe against in-vehicle assaults, from parking choices to defensive positioning."
+    },
+    {
+      "id": "how-to-handle-audio-exclusion",
+      "title": "How to Handle Audio Exclusion",
+      "publication": "POLICE Magazine",
+      "date": "2011-02-07",
+      "url": "https://www.policemag.com/articles/how-to-handle-audio-exclusion",
+      "excerpt": "Training exercises to help officers stay effective when hearing loss compromises their situational awareness."
+    },
+    {
+      "id": "beware-the-restrained-subject",
+      "title": "Beware the Restrained Subject",
+      "publication": "POLICE Magazine",
+      "date": "2010-09-30",
+      "url": "https://www.policemag.com/articles/beware-the-restrained-subject",
+      "excerpt": "A reminder that handcuffed suspects remain a real threat, with defensive tactics for transport situations."
+    },
+    {
+      "id": "just-breathe",
+      "title": "Just Breathe",
+      "publication": "POLICE Magazine",
+      "date": "2010-06-11",
+      "url": "https://www.policemag.com/articles/just-breathe",
+      "excerpt": "A simple controlled-breathing technique officers can use to manage stress and stay sharp under pressure."
+    },
+    {
+      "id": "pursuit-training-on-the-cheap",
+      "title": "Pursuit Training on the Cheap",
+      "publication": "POLICE Magazine",
+      "date": "2009-11-30",
+      "url": "https://www.policemag.com/articles/pursuit-training-on-the-cheap",
+      "excerpt": "A low-cost, video-scenario training model for building sound decision-making during vehicle pursuits."
+    },
+    {
+      "id": "sightless-training",
+      "title": "Sightless Training",
+      "publication": "POLICE Magazine",
+      "date": "2009-03-01",
+      "url": "https://www.policemag.com/articles/sightless-training",
+      "excerpt": "A case for practicing defensive tactics with limited vision, to prepare officers for night-shift, low-light situations."
+    }
+  ]
+}

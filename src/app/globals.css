@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/*
+ * Light, off-white background with a blue hue throughout — a civic /
+ * community-policing feel, not a dark tech-startup look. `navy` and
+ * `navy-deep` are still genuinely dark; they're reserved for the footer
+ * band, so most of the token names below no longer mean "light version of
+ * X" — they mean "the right shade of X for this light theme."
+ */
+:root {
+  --color-navy: #dbe6f7;
+  --color-navy-deep: #0e1a30;
+  --color-surface: #c7dbf5;
+  --color-surface-soft: #b3cdef;
+  --color-line: rgba(16, 28, 49, 0.16);
+  --color-line-onDark: rgba(245, 248, 253, 0.16);
+  --color-badge: #2451c4;
+  --color-badge-light: #17337a;
+  --color-steel: #4c5f80;
+  --color-red: #9c332e;
+  --color-ink: #101c33;
+  --color-ink-soft: #33425e;
+  --color-paper: #f5f8fd;
+  --color-paper-soft: #b9c6dc;
+  --color-accent-onDark: #7fa4ef;
+  --color-foreground: var(--color-ink);
+  --color-background: var(--color-navy);
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-navy-deep: var(--color-navy-deep);
+  --color-surface: var(--color-surface);
+  --color-surface-soft: var(--color-surface-soft);
+  --color-line: var(--color-line);
+  --color-line-onDark: var(--color-line-onDark);
+  --color-badge: var(--color-badge);
+  --color-badge-light: var(--color-badge-light);
+  --color-steel: var(--color-steel);
+  --color-red: var(--color-red);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-paper: var(--color-paper);
+  --color-paper-soft: var(--color-paper-soft);
+  --color-accent-onDark: var(--color-accent-onDark);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --font-display: var(--font-newsreader);
+  --font-body: var(--font-public-sans);
+}
+
+/* Dark navy so an elastic/rubber-band overscroll reveals the same blue as
+   the header and footer, instead of flashing white beyond the page content. */
+html {
+  min-height: 100%;
+  background-color: var(--color-navy-deep);
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--color-navy);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.prose-heading {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: 0.005em;
+}
+
+.section-label,
+.section-label-onDark {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.section-label {
+  color: var(--color-badge-light);
+}
+
+/* For use inside PhotoBand — badge-light is a dark navy meant for light
+   backgrounds and disappears against a photo's dark scrim. */
+.section-label-onDark {
+  color: var(--color-accent-onDark);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  border-radius: 0.25rem;
+  background: var(--color-badge);
+  color: var(--color-paper);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-badge-light);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

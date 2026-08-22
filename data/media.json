@@ -1,0 +1,88 @@
+{
+  "appearances": [
+    {
+      "id": "morning-journal-book",
+      "title": "Former Richmond Heights police chief publishes law enforcement book",
+      "outlet": "The Morning Journal",
+      "type": "news",
+      "date": "2026-02-13",
+      "url": "https://www.morningjournal.com/2026/02/13/former-richmond-heights-police-chief-publishes-law-enforcement-book/",
+      "description": "Profile on Tom's decades writing for national police publications and the release of \"A Cop and a Coffee Cup.\""
+    },
+    {
+      "id": "cleveland-hillcrest-book",
+      "title": "Local chief Wetzel writes book he believes can improve police department leadership across the nation",
+      "outlet": "Cleveland.com (Hillcrest)",
+      "type": "news",
+      "date": "2026-02-15",
+      "url": "https://www.cleveland.com/hillcrest/2026/02/local-chief-wetzel-writes-book-he-believes-can-improve-police-department-leadership-across-the-nation.html",
+      "description": "Local coverage of the book's release and Tom's leadership philosophy."
+    },
+    {
+      "id": "news5-book",
+      "title": "University Circle police chief pens book on modern policing challenges",
+      "outlet": "News 5 Cleveland",
+      "type": "news",
+      "date": "2026-06-22",
+      "url": "https://www.news5cleveland.com/news/local-news/oh-cuyahoga/university-circle-police-chief-pens-book-on-modern-policing-challenges",
+      "description": "Tom argues that the best fixes for modern policing come from frontline officers, not courts or academics."
+    },
+    {
+      "id": "fox8-think-tank",
+      "title": "How to police better? University Circle police plan think tank",
+      "outlet": "Fox 8 News",
+      "type": "news",
+      "date": "2026-08-18",
+      "url": "https://fox8.com/news/how-to-police-better-university-circle-police-plan-think-tank/",
+      "description": "Coverage of University Circle PD's regional police think-tank initiative."
+    },
+    {
+      "id": "blueline-review",
+      "title": "Off the Shelf: A Cop and a Coffee Cup",
+      "outlet": "Blue Line Magazine",
+      "type": "review",
+      "date": "2026-03-07",
+      "url": "https://www.blueline.ca/off-the-shelf-a-cop-and-a-coffee-cup/",
+      "description": "Retired Detective Lieutenant Harold DeBoe reviews the book's practical, conversational take on police leadership and mentorship."
+    },
+    {
+      "id": "copdoc-podcast",
+      "title": "Chief Tom Wetzel, University Circle, OH Police",
+      "outlet": "The CopDoc Podcast: Aiming for Excellence in Leadership",
+      "type": "podcast",
+      "date": "2026-05-26",
+      "url": "https://podcasts.musixmatch.com/podcast/the-copdoc-podcast-aiming-for-excellence-in-leadership-01hszqfmprd0y83s3a42zv1e6a/episode/chief-tom-wetzel-university-circle-oh-police-01kskbrbc80zkg0fas7wx0neyq",
+      "description": "A conversation on leadership excellence in policing."
+    },
+    {
+      "id": "words-of-the-wise-podcast",
+      "title": "Happy Cops, Happy Community",
+      "outlet": "Words of the Wise Podcast",
+      "type": "podcast",
+      "date": "2026-08-19",
+      "url": "https://www.youtube.com/watch?v=vjGDVMWJEWU",
+      "description": "A discussion on how officer well-being and morale shape community relations.",
+      "thumbnail": "https://img.youtube.com/vi/vjGDVMWJEWU/hqdefault.jpg"
+    },
+    {
+      "id": "headline-eye-radio",
+      "title": "The Headline Eye — Chief Tom Wetzel on Police Policies",
+      "outlet": "The Headline Eye (WNRV / NerveDJs)",
+      "type": "interview",
+      "date": "2025-08-27",
+      "url": "https://www.youtube.com/watch?v=CM3ctMsT8EA",
+      "description": "Radio interview on police policy.",
+      "thumbnail": "https://img.youtube.com/vi/CM3ctMsT8EA/hqdefault.jpg"
+    },
+    {
+      "id": "news5-retention-interview",
+      "title": "Richmond Heights Police Chief Thomas Wetzel Talks About Retaining Officers",
+      "outlet": "News 5 Cleveland",
+      "type": "interview",
+      "date": "2022-06-21",
+      "url": "https://www.youtube.com/watch?v=PRm0p8uCi4k",
+      "description": "An interview from Tom's time as Richmond Heights Chief on officer retention strategies.",
+      "thumbnail": "https://img.youtube.com/vi/PRm0p8uCi4k/hqdefault.jpg"
+    }
+  ]
+}

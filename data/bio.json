@@ -1,0 +1,25 @@
+{
+  "photo": "tom-portrait",
+  "summary": "Tom Wetzel is the Chief of Police for University Circle, Ohio. He has spent his career in Northeast Ohio law enforcement, with a consistent focus on community policing: the belief that a police department's core work is serving and building trust with the community it protects.",
+  "philosophy": "",
+  "speaking": {
+    "summary": "Tom has delivered hundreds of talks and presentations on policing, leadership, and personal safety, drawing on decades of command experience in Northeast Ohio law enforcement. He's available for speaking engagements and leadership consulting with departments, organizations, and event audiences."
+  },
+  "timeline": [
+    {
+      "role": "Chief of Police",
+      "organization": "University Circle Police Department",
+      "period": "[PLACEHOLDER — years, present]"
+    },
+    {
+      "role": "Chief of Police",
+      "organization": "Richmond Heights Police Department",
+      "period": "[PLACEHOLDER — years]"
+    },
+    {
+      "role": "Lieutenant",
+      "organization": "Beachwood Police Department",
+      "period": "[PLACEHOLDER — years]"
+    }
+  ]
+}
