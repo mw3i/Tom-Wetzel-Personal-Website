@@ -56,7 +56,7 @@ export default function BookPage() {
             </p>
             {diagram && (
               <div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-line">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
                   <Image
                     src={diagram}
                     alt="Motivation vs. discipline diagram"
@@ -64,9 +64,7 @@ export default function BookPage() {
                     className="object-contain p-4"
                   />
                 </div>
-                <p className="mt-2 text-center text-xs text-steel">
-                  &copy; Tom Wetzel
-                </p>
+                <p className="mt-2 text-right text-xs text-steel">&copy;</p>
               </div>
             )}
           </div>
