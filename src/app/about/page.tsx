@@ -26,6 +26,10 @@ const offDuty = [
     imageKey: "about-chicken",
     caption: "World famous chicken",
   },
+  {
+    imageKey: "about-tk4",
+    caption: undefined,
+  },
 ] as const;
 
 export default function AboutPage() {
@@ -105,7 +109,7 @@ export default function AboutPage() {
 
       {/* Off duty gallery */}
       <Section variant="surface">
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {offDuty.map((item) => {
             const src = getImage(item.imageKey);
             if (!src) return null;
@@ -114,14 +118,16 @@ export default function AboutPage() {
                 <div className="relative aspect-square w-full overflow-hidden rounded-sm">
                   <Image
                     src={src}
-                    alt={item.caption}
+                    alt={item.caption ?? ""}
                     fill
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-3 text-center text-sm text-ink-soft">
-                  {item.caption}
-                </p>
+                {item.caption && (
+                  <p className="mt-3 text-center text-sm text-ink-soft">
+                    {item.caption}
+                  </p>
+                )}
               </div>
             );
           })}

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { BookCover } from "@/components/BookCover";
+import { EventSection } from "@/components/EventSection";
 import { PhotoBand } from "@/components/PhotoBand";
+// import { PullQuote } from "@/components/PullQuote"; // temporarily hiding until after event
 import { Section } from "@/components/Section";
-import { getBook, getSite } from "@/lib/data";
+import { getBook, getEvent, getSite } from "@/lib/data";
 import { createPageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
@@ -17,6 +19,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function Home() {
   const site = getSite();
   const book = getBook();
+  const event = getEvent();
 
   return (
     <>
@@ -24,7 +27,7 @@ export default function Home() {
       <PhotoBand imageKey="hero-home" alt="Tom Wetzel" minHeight="large" align="start">
         <div className="grid w-full gap-12 sm:grid-cols-2 sm:items-center sm:gap-16">
           <div className="order-2 sm:order-1">
-            <p className="section-label-onDark">{site.title}</p>
+            <p className="section-label-onDark">{site.homeTitle}</p>
             <h1 className="prose-heading mt-4 text-4xl leading-tight text-paper sm:text-5xl">
               {book.title}
             </h1>
@@ -40,7 +43,7 @@ export default function Home() {
               href={book.buyUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-paper transition-colors hover:bg-badge-light"
+              className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-badge-light"
             >
               {book.buyLabel}
             </a>
@@ -51,21 +54,30 @@ export default function Home() {
         </div>
       </PhotoBand>
 
-      {/* Pull quote */}
-      {book.pullQuote && (
-        <div className="border-b border-line bg-navy">
-          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
-            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
-              &ldquo;{book.pullQuote}&rdquo;
-            </p>
-            {book.pullQuoteAttribution && (
-              <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
-                {book.pullQuoteAttribution}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
+      <EventSection event={event} />
+
+      {/* temporarily hiding until after event — re-enable the import above and this line */}
+      {/* <PullQuote book={book} /> */}
+
+      {/* The Leadership Corner */}
+      <Section variant="surface">
+        <p className="section-label">Consulting</p>
+        <h2 className="prose-heading mt-4 max-w-2xl text-3xl text-ink sm:text-4xl">
+          The Leadership Corner
+        </h2>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
+          Available for corporate security and police leadership training
+          programs and consultation. Walk the tightrope of leadership —
+          balancing motivation and discipline — and bring your organization
+          to its best version ever.
+        </p>
+        <Link
+          href="/contact"
+          className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-badge-light"
+        >
+          Get in Touch
+        </Link>
+      </Section>
 
       {/* About Tom teaser */}
       <PhotoBand imageKey="home-about-teaser-bg" alt="" minHeight="medium" parallax={false}>
@@ -73,10 +85,14 @@ export default function Home() {
         <h2 className="prose-heading mt-4 max-w-2xl text-3xl text-paper sm:text-4xl">
           Community policing, in practice
         </h2>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
-          Tom Wetzel is the Chief of Police for University Circle, Ohio — with
-          a career built on the belief that a department&apos;s first job is
-          serving the community it protects.
+        <p className="mt-6 max-w-2xl text-justify text-lg leading-relaxed text-paper-soft">
+          When community policing is deeply integrated into the culture and
+          fabric of an agency, it will build bridges of trust that will last
+          generations and, in doing so, neighborhoods will become safer
+          places to live and thrive. Its police officers will deliver a
+          service model that blends the rule of law with empathy and
+          clemency and produces a symbiotic relationship between the server
+          and the served. It is a must for long term success.
         </p>
         <Link
           href="/about"

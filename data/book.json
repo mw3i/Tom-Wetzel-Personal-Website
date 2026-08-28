@@ -7,5 +7,15 @@
   "buyLabel": "Buy on Barnes & Noble",
   "coverImage": "book-cover",
   "pullQuote": "A conversation as natural as two cops would have over a cup of joe.",
-  "pullQuoteAttribution": "Harold DeBoe, Blue Line Magazine"
+  "pullQuoteAuthor": "Harold DeBoe",
+  "pullQuoteAuthorWorks": [
+    {
+      "title": "Justice on a Cold Platter",
+      "url": "https://www.amazon.com/dp/B0FM2F6Y9M"
+    },
+    {
+      "title": "Tales of Suburban Cops",
+      "url": "https://www.amazon.com/Tales-Suburban-Cops-Harold-Deboe/dp/B0H2T8BFGT"
+    }
+  ]
 }

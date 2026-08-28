@@ -5,7 +5,12 @@ export interface Site {
   shortName: string;
   headerName: string;
   title: string;
+  homeTitle: string;
   tagline: string;
+  footerVerse: {
+    text: string;
+    reference: string;
+  };
   email: string;
   social: {
     linkedin: string | null;
@@ -17,6 +22,11 @@ export interface Site {
   };
 }
 
+export interface BookWork {
+  title: string;
+  url: string;
+}
+
 export interface Book {
   title: string;
   subtitle: string;
@@ -26,7 +36,9 @@ export interface Book {
   buyLabel: string;
   coverImage: ImageKey;
   pullQuote: string;
-  pullQuoteAttribution: string;
+  pullQuoteAuthor: string;
+  /** Other books by the pull-quote's author, credited alongside their name. */
+  pullQuoteAuthorWorks?: BookWork[];
 }
 
 export interface TimelineEntry {
@@ -67,6 +79,22 @@ export interface MediaAppearance {
   url: string;
   description: string;
   thumbnail?: string;
+}
+
+export interface Event {
+  active: boolean;
+  title: string;
+  subtitle: string;
+  dateLine: string;
+  location: string;
+  room: string;
+  registrationNote: string;
+  address: string;
+  website: string;
+  websiteLabel: string;
+  phone: string;
+  mapEmbedUrl: string;
+  image: ImageKey;
 }
 
 export type Images = Record<string, string | null>;

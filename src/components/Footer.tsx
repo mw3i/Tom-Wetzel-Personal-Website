@@ -15,6 +15,16 @@ export function Footer() {
           <p className="mt-3 text-sm leading-relaxed text-paper-soft">
             {site.title}
           </p>
+          {site.footerVerse && (
+            <blockquote className="mt-5 border-l-2 border-accent-onDark/40 pl-4">
+              <p className="font-display text-base italic leading-snug text-paper-soft">
+                &ldquo;{site.footerVerse.text}&rdquo;
+              </p>
+              <cite className="mt-1 block text-xs not-italic uppercase tracking-[0.15em] text-accent-onDark">
+                {site.footerVerse.reference}
+              </cite>
+            </blockquote>
+          )}
         </div>
 
         <div>

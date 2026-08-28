@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { MediaCard } from "@/components/MediaCard";
 import { PhotoBand } from "@/components/PhotoBand";
+import { PullQuote } from "@/components/PullQuote";
 import { Section } from "@/components/Section";
-import { getBook, getMediaAppearances } from "@/lib/data";
+import { getBook, getImage, getMediaAppearances } from "@/lib/data";
 import { createPageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
@@ -18,6 +20,8 @@ export default function BookPage() {
   const reviews = getMediaAppearances().filter(
     (appearance) => appearance.type === "review",
   );
+  const diagram = getImage("book-motivation-diagram");
+  const coverArt = getImage("book-cover-art");
 
   return (
     <>
@@ -46,26 +50,30 @@ export default function BookPage() {
 
       {book.longDescription && (
         <Section>
-          <p className="max-w-2xl text-lg leading-relaxed text-ink-soft">
-            {book.longDescription}
-          </p>
+          <div className="grid gap-10 sm:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] sm:items-center sm:gap-16">
+            <p className="text-lg leading-relaxed text-ink-soft">
+              {book.longDescription}
+            </p>
+            {diagram && (
+              <div>
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-line">
+                  <Image
+                    src={diagram}
+                    alt="Motivation vs. discipline diagram"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <p className="mt-2 text-center text-xs text-steel">
+                  &copy; Tom Wetzel
+                </p>
+              </div>
+            )}
+          </div>
         </Section>
       )}
 
-      {book.pullQuote && (
-        <div className="border-b border-line bg-navy">
-          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
-            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
-              &ldquo;{book.pullQuote}&rdquo;
-            </p>
-            {book.pullQuoteAttribution && (
-              <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
-                {book.pullQuoteAttribution}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
+      <PullQuote book={book} />
 
       {reviews.length > 0 && (
         <Section variant="surface">
@@ -74,6 +82,25 @@ export default function BookPage() {
             {reviews.map((appearance) => (
               <MediaCard key={appearance.id} appearance={appearance} showType={false} />
             ))}
+          </div>
+        </Section>
+      )}
+
+      {coverArt && (
+        <Section variant="surface">
+          <div className="grid gap-10 sm:grid-cols-2">
+            <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-sm shadow-lg shadow-ink/10">
+              <Image
+                src={coverArt}
+                alt="Original cover art for A Cop and a Coffee Cup"
+                fill
+                className="object-cover"
+              />
+              <p className="absolute inset-x-0 bottom-0 bg-navy-deep/60 py-1.5 text-center text-xs text-paper-soft">
+                Cover art by Emma Buda
+              </p>
+            </div>
+            <div />
           </div>
         </Section>
       )}

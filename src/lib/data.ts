@@ -1,6 +1,7 @@
 import articlesData from "@data/articles.json";
 import bioData from "@data/bio.json";
 import bookData from "@data/book.json";
+import eventData from "@data/event.json";
 import imagesData from "@data/images.json";
 import mediaData from "@data/media.json";
 import siteData from "@data/site.json";
@@ -9,6 +10,7 @@ import type {
   Article,
   Bio,
   Book,
+  Event,
   ImageKey,
   MediaAppearance,
   Site,
@@ -21,6 +23,10 @@ export function getSite(): Site {
 
 export function getBook(): Book {
   return bookData as Book;
+}
+
+export function getEvent(): Event {
+  return eventData as Event;
 }
 
 export function getBio(): Bio {

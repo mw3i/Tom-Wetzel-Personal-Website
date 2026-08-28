@@ -3,7 +3,12 @@
   "shortName": "Tom Wetzel",
   "headerName": "Chief Tom Wetzel",
   "title": "Chief of Police, University Circle",
+  "homeTitle": "Chief of Police, Northeast Ohio",
   "tagline": "Community policing, in practice.",
+  "footerVerse": {
+    "text": "Trust in the LORD and do good.",
+    "reference": "Psalm 37:3"
+  },
   "email": "[PLACEHOLDER — contact email]",
   "social": {
     "linkedin": null,
