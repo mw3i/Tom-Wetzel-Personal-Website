@@ -86,19 +86,16 @@ export default function BookPage() {
 
       {coverArt && (
         <Section variant="surface">
-          <div className="grid gap-10 sm:grid-cols-2">
-            <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-sm shadow-lg shadow-ink/10">
-              <Image
-                src={coverArt}
-                alt="Original cover art for A Cop and a Coffee Cup"
-                fill
-                className="object-cover"
-              />
-              <p className="absolute inset-x-0 bottom-0 bg-navy-deep/60 py-1.5 text-center text-xs text-paper-soft">
-                Cover art by Emma Buda
-              </p>
-            </div>
-            <div />
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-sm shadow-lg shadow-ink/10">
+            <Image
+              src={coverArt}
+              alt="Original cover art for A Cop and a Coffee Cup"
+              fill
+              className="object-cover"
+            />
+            <p className="absolute inset-x-0 bottom-0 bg-navy-deep/60 py-1.5 text-center text-xs text-paper-soft">
+              Cover art by Emma Buda
+            </p>
           </div>
         </Section>
       )}
