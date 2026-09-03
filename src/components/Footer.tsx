@@ -48,6 +48,20 @@ export function Footer() {
 
       <div className="border-t border-line-onDark px-6 py-4 text-center text-xs text-paper-soft/70">
         © {year} {site.name}. All rights reserved.
+        {site.builderCredit && (
+          <>
+            {" "}
+            &middot; Site by{" "}
+            <a
+              href={site.builderCredit.url}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-accent-onDark"
+            >
+              {site.builderCredit.name}
+            </a>
+          </>
+        )}
       </div>
     </footer>
   );

@@ -20,6 +20,10 @@ export interface Site {
   seo: {
     defaultDescription: string;
   };
+  builderCredit: {
+    name: string;
+    url: string;
+  };
 }
 
 export interface BookWork {
