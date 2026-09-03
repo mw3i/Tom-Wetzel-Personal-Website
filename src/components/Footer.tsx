@@ -56,7 +56,7 @@ export function Footer() {
               href={site.builderCredit.url}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-accent-onDark"
+              className="underline underline-offset-2 transition-colors hover:text-accent-onDark"
             >
               {site.builderCredit.name}
             </a>
