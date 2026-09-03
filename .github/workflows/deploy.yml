@@ -30,19 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      # No custom domain yet: the site is served from
-      # https://<user>.github.io/<repo-name>/, so every internal link needs
-      # that repo-name prefix baked in at build time (NEXT_PUBLIC_BASE_PATH).
-      #
-      # Once a real domain is ready:
-      #   1. Add a `public/CNAME` file containing the domain.
-      #   2. Delete the NEXT_PUBLIC_BASE_PATH line below (root-served, no prefix).
-      #   3. Point NEXT_PUBLIC_SITE_URL at the new domain.
-      #   4. Point the domain's DNS at GitHub Pages and enable it in repo Settings → Pages.
+      # Custom domain (tom-wetzel.com), root-served — no basePath prefix.
+      # public/CNAME tells GitHub Pages which domain to serve this under.
       - name: Build static site
         env:
-          NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_SITE_URL: https://tom-wetzel.com
         run: npm run build
 
       - name: Upload artifact
