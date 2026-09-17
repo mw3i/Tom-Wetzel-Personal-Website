@@ -112,19 +112,19 @@ export default function AboutPage() {
         </Link>
 
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
-          <div className="mt-16 grid gap-x-12 gap-y-4 sm:grid-cols-3 sm:grid-rows-[auto_auto]">
-            {bio.speaking.highlights.map((highlight, index) => (
+          <div className="mt-16 grid gap-x-12 gap-y-4 sm:grid-cols-2 sm:grid-rows-[auto_auto]">
+            {bio.speaking.highlights.map((highlight) => (
               <div
                 key={`${highlight.caption}-photo`}
-                className={`flex items-center justify-center sm:row-start-1 ${index === 0 ? "sm:col-span-2" : "sm:col-span-1"}`}
+                className="flex items-center justify-center sm:row-start-1"
               >
                 <SpeakingHighlightPhoto highlight={highlight} />
               </div>
             ))}
-            {bio.speaking.highlights.map((highlight, index) => (
+            {bio.speaking.highlights.map((highlight) => (
               <p
                 key={`${highlight.caption}-caption`}
-                className={`text-sm leading-relaxed text-ink-soft sm:row-start-2 ${index === 0 ? "sm:col-span-2" : "sm:col-span-1"}`}
+                className="text-sm leading-relaxed text-ink-soft sm:row-start-2"
               >
                 {highlight.caption}
               </p>
