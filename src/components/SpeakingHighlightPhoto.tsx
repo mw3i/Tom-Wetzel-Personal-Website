@@ -35,7 +35,7 @@ export function SpeakingHighlightPhoto({
 
   if (single) {
     return (
-      <div className="relative aspect-[1600/1128] w-full overflow-hidden rounded-sm shadow-lg shadow-ink/20">
+      <div className="relative aspect-[1600/1128] w-2/3 overflow-hidden rounded-sm shadow-lg shadow-ink/20">
         <Image src={single} alt="" fill className="object-cover" />
       </div>
     );
