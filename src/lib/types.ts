@@ -52,8 +52,9 @@ export interface TimelineEntry {
 }
 
 export interface SpeakingHighlight {
-  /** [top-right image, bottom-left image] */
-  images: [ImageKey, ImageKey];
+  /** [top-right image, bottom-left image]. Omit for a text-only entry
+   * (e.g. an engagement with no photos yet). */
+  images?: [ImageKey, ImageKey];
   caption: string;
 }
 
