@@ -108,9 +108,11 @@ export default function AboutPage() {
         </Link>
 
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
-          <div className="mt-16 grid gap-12 sm:grid-cols-2">
-            {bio.speaking.highlights.map((highlight) => (
-              <SpeakingHighlightCard key={highlight.caption} highlight={highlight} />
+          <div className="mt-16 grid gap-12 sm:grid-cols-3">
+            {bio.speaking.highlights.map((highlight, index) => (
+              <div key={highlight.caption} className={index === 0 ? "sm:col-span-2" : "sm:col-span-1"}>
+                <SpeakingHighlightCard highlight={highlight} />
+              </div>
             ))}
           </div>
         )}

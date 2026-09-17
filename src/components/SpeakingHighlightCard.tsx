@@ -14,7 +14,7 @@ export function SpeakingHighlightCard({
 
   return (
     <div>
-      <div className="relative aspect-[5/4] w-full max-w-sm">
+      <div className="relative aspect-[5/4] w-full max-w-lg">
         {bottomLeft && (
           <div className="absolute bottom-0 left-0 aspect-[4/3] w-3/4 overflow-hidden rounded-sm shadow-lg shadow-ink/20">
             <Image src={bottomLeft} alt="" fill className="object-cover" />
@@ -26,7 +26,7 @@ export function SpeakingHighlightCard({
           </div>
         )}
       </div>
-      <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
+      <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         {highlight.caption}
       </p>
     </div>
