@@ -31,6 +31,10 @@ const offDuty = [
     imageKey: "about-tk4",
     caption: undefined,
   },
+  {
+    imageKey: "about-vr-training",
+    caption: undefined,
+  },
 ] as const;
 
 export default function AboutPage() {
@@ -120,7 +124,7 @@ export default function AboutPage() {
 
       {/* Off duty gallery */}
       <Section variant="surface">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {offDuty.map((item) => {
             const src = getImage(item.imageKey);
             if (!src) return null;

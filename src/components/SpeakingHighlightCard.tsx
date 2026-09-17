@@ -11,6 +11,7 @@ export function SpeakingHighlightCard({
   const [topRightKey, bottomLeftKey] = highlight.images ?? [];
   const topRight = topRightKey ? getImage(topRightKey) : null;
   const bottomLeft = bottomLeftKey ? getImage(bottomLeftKey) : null;
+  const single = highlight.image ? getImage(highlight.image) : null;
 
   return (
     <div>
@@ -26,6 +27,11 @@ export function SpeakingHighlightCard({
               <Image src={bottomLeft} alt="" fill className="object-cover" />
             </div>
           )}
+        </div>
+      )}
+      {single && (
+        <div className="relative aspect-[1600/1128] w-full overflow-hidden rounded-sm shadow-lg shadow-ink/20">
+          <Image src={single} alt="" fill className="object-cover" />
         </div>
       )}
       <p className="mt-4 text-sm leading-relaxed text-ink-soft">

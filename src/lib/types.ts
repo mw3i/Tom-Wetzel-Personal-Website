@@ -52,9 +52,11 @@ export interface TimelineEntry {
 }
 
 export interface SpeakingHighlight {
-  /** [top-right image, bottom-left image]. Omit for a text-only entry
-   * (e.g. an engagement with no photos yet). */
+  /** [top-right image, bottom-left image], for the overlapping-photo
+   * treatment. Use `image` instead for a single photo, or omit both for a
+   * text-only entry (e.g. an engagement with no photos yet). */
   images?: [ImageKey, ImageKey];
+  image?: ImageKey;
   caption: string;
 }
 
