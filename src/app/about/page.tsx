@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Section } from "@/components/Section";
+import { SpeakingHighlightCard } from "@/components/SpeakingHighlightCard";
 import { getBio, getImage, getSite } from "@/lib/data";
 import { createPageMetadata } from "@/lib/site";
 
@@ -105,6 +106,14 @@ export default function AboutPage() {
         >
           Get in Touch
         </Link>
+
+        {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
+          <div className="mt-16 grid gap-12 sm:grid-cols-2">
+            {bio.speaking.highlights.map((highlight) => (
+              <SpeakingHighlightCard key={highlight.caption} highlight={highlight} />
+            ))}
+          </div>
+        )}
       </Section>
 
       {/* Off duty gallery */}

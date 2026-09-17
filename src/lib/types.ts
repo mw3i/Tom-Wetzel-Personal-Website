@@ -51,12 +51,19 @@ export interface TimelineEntry {
   period: string;
 }
 
+export interface SpeakingHighlight {
+  /** [top-right image, bottom-left image] */
+  images: [ImageKey, ImageKey];
+  caption: string;
+}
+
 export interface Bio {
   photo: ImageKey;
   summary: string;
   philosophy: string;
   speaking: {
     summary: string;
+    highlights?: SpeakingHighlight[];
   };
   timeline: TimelineEntry[];
 }
