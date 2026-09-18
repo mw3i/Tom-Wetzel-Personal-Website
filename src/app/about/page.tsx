@@ -14,6 +14,25 @@ export const metadata: Metadata = createPageMetadata({
   path: "/about",
 });
 
+// Literal class strings (not template-built) so Tailwind's static scanner
+// generates them even though they're selected dynamically by index below.
+const photoOrderClasses = [
+  "order-1",
+  "order-3",
+  "order-5",
+  "order-7",
+  "order-9",
+  "order-11",
+];
+const captionOrderClasses = [
+  "order-2",
+  "order-4",
+  "order-6",
+  "order-8",
+  "order-10",
+  "order-12",
+];
+
 const offDuty = [
   {
     imageKey: "about-beachwood",
@@ -129,18 +148,28 @@ export default function AboutPage() {
 
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
           <div className="mt-16 grid gap-x-12 gap-y-4 sm:grid-cols-3 sm:grid-rows-[auto_auto]">
-            {bio.speaking.highlights.map((highlight) => (
+            {/*
+              Mobile (below sm): no grid-cols/grid-rows override applies, so
+              items just flow in DOM order in one column. Since photos and
+              captions come from two separate maps, that would stack all
+              photos first, then all captions. `order` fixes the visual
+              sequence to photo/caption/photo/caption on mobile, while
+              `sm:order-none` cancels it on desktop so the explicit
+              row-start + auto column placement (which needs the original
+              DOM order) still works as before.
+            */}
+            {bio.speaking.highlights.map((highlight, index) => (
               <div
                 key={`${highlight.caption}-photo`}
-                className="flex items-center justify-center sm:row-start-1"
+                className={`flex items-center justify-center sm:order-none sm:row-start-1 ${photoOrderClasses[index] ?? ""}`}
               >
                 <SpeakingHighlightPhoto highlight={highlight} />
               </div>
             ))}
-            {bio.speaking.highlights.map((highlight) => (
+            {bio.speaking.highlights.map((highlight, index) => (
               <p
                 key={`${highlight.caption}-caption`}
-                className="text-sm leading-relaxed text-ink-soft sm:row-start-2"
+                className={`text-sm leading-relaxed text-ink-soft sm:order-none sm:row-start-2 ${captionOrderClasses[index] ?? ""}`}
               >
                 {highlight.caption}
               </p>
