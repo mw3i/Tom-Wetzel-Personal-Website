@@ -35,6 +35,22 @@ const offDuty = [
     imageKey: "about-vr-training",
     caption: undefined,
   },
+  {
+    imageKey: "about-police-academy",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-richmond-heights-pd",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-beachwood-pd",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-coaching-basketball",
+    caption: undefined,
+  },
 ] as const;
 
 export default function AboutPage() {
@@ -112,7 +128,7 @@ export default function AboutPage() {
         </Link>
 
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
-          <div className="mt-16 grid gap-x-12 gap-y-4 sm:grid-cols-2 sm:grid-rows-[auto_auto]">
+          <div className="mt-16 grid gap-x-12 gap-y-4 sm:grid-cols-3 sm:grid-rows-[auto_auto]">
             {bio.speaking.highlights.map((highlight) => (
               <div
                 key={`${highlight.caption}-photo`}
