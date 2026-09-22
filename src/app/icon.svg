@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path
+    d="M50,4 L83,17 L83,49 C83,72 68,90 50,97 C32,90 17,72 17,49 L17,17 Z"
+    fill="#d4af37"
+    stroke="#8a6d1f"
+    stroke-width="2"
+  />
+  <path
+    d="M50,11 L76,21.5 L76,48 C76,67 64,82 50,88 C36,82 24,67 24,48 L24,21.5 Z"
+    fill="#0e1a30"
+  />
+  <text
+    x="50"
+    y="54"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="46"
+    fill="#d4af37"
+  >9</text>
+</svg>
