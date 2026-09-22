@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 import { Section } from "@/components/Section";
-import { SpeakingHighlightPhoto } from "@/components/SpeakingHighlightPhoto";
 import { getBio, getImage, getSite } from "@/lib/data";
 import { createPageMetadata } from "@/lib/site";
 
@@ -49,6 +47,14 @@ const offDuty = [
   },
   {
     imageKey: "about-coaching-basketball",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-skate-night",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-governor-visit",
     caption: undefined,
   },
 ] as const;
@@ -110,46 +116,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Speaking & consulting */}
-      <Section>
-        <p className="section-label">Speaking &amp; Consulting</p>
-        <h2 className="prose-heading mt-4 max-w-2xl text-3xl text-ink sm:text-4xl">
-          Speaking &amp; Leadership Consulting
-        </h2>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
-          {bio.speaking.summary}
-        </p>
-        <Link
-          href="/contact"
-          className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-badge-light"
-        >
-          Get in Touch
-        </Link>
-
-        {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
-          <div className="mt-16 grid gap-x-12 gap-y-10 sm:grid-cols-2">
-            {/*
-              Each highlight is one flex-column item (photo, then caption),
-              so mobile order is correct by construction. Grid's default
-              row-stretch equalizes card height within a row (h-full +
-              flex-1 on the photo wrapper), so captions in the same row
-              start at the same offset even when photos differ in aspect
-              ratio.
-            */}
-            {bio.speaking.highlights.map((highlight) => (
-              <div key={highlight.caption} className="flex h-full flex-col">
-                <div className="flex flex-1 items-center justify-center">
-                  <SpeakingHighlightPhoto highlight={highlight} />
-                </div>
-                <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-                  {highlight.caption}
-                </p>
-              </div>
-            ))}
-          </div>
-        )}
-      </Section>
 
       {/* Off duty gallery */}
       <Section variant="surface">
