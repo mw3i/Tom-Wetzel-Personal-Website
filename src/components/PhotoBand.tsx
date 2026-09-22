@@ -7,7 +7,7 @@ interface PhotoBandProps {
   imageKey: ImageKey;
   alt: string;
   children: ReactNode;
-  minHeight?: "small" | "medium" | "large";
+  minHeight?: "xsmall" | "small" | "medium" | "large";
   align?: "start" | "center";
   /**
    * Two `background-attachment: fixed` sections visible on screen at once
@@ -20,6 +20,7 @@ interface PhotoBandProps {
 }
 
 const heightClass: Record<NonNullable<PhotoBandProps["minHeight"]>, string> = {
+  xsmall: "min-h-[26vh] md:min-h-[30vh]",
   small: "min-h-[36vh] md:min-h-[42vh]",
   medium: "min-h-[46vh] md:min-h-[54vh]",
   large: "min-h-[64vh] md:min-h-[78vh]",

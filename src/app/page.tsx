@@ -72,7 +72,7 @@ export default function Home() {
           to its best version ever.
         </p>
         <Link
-          href="/contact"
+          href="/seminars"
           className="mt-8 inline-block rounded-sm bg-badge px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-badge-light"
         >
           Get in Touch

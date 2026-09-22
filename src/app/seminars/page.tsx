@@ -19,7 +19,7 @@ export default function SeminarsPage() {
 
   return (
     <>
-      <PhotoBand imageKey="hero-about" alt="" minHeight="small" align="start">
+      <PhotoBand imageKey="hero-about" alt="" minHeight="xsmall" align="start">
         <p className="section-label-onDark">Speaking &amp; Consulting</p>
         <h1 className="prose-heading mt-4 text-4xl leading-tight text-paper sm:text-5xl">
           Leadership Seminars
@@ -57,9 +57,8 @@ export default function SeminarsPage() {
 
       <Section variant="surface">
         <div className="max-w-xl">
-          <p className="section-label">Get in Touch</p>
-          <h2 className="prose-heading mt-4 text-3xl text-ink sm:text-4xl">
-            Book a speaking engagement or consulting session
+          <h2 className="prose-heading text-3xl text-ink sm:text-4xl">
+            Get in Touch
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-soft">
             Interested in a speaking engagement or leadership consulting?
