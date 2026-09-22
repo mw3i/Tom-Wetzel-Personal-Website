@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <path
-    d="M50,4 L83,17 L83,49 C83,72 68,90 50,97 C32,90 17,72 17,49 L17,17 Z"
+    d="M50,14 L84,26 L84,50 C84,66 70,78 50,88 C30,78 16,66 16,50 L16,26 Z"
     fill="#d4af37"
     stroke="#8a6d1f"
     stroke-width="2"
   />
   <path
-    d="M50,11 L76,21.5 L76,48 C76,67 64,82 50,88 C36,82 24,67 24,48 L24,21.5 Z"
+    d="M50,21 L76,31 L76,49 C76,61 65,71 50,79 C35,71 24,61 24,49 L24,31 Z"
     fill="#0e1a30"
   />
   <text
     x="50"
-    y="54"
+    y="49"
     text-anchor="middle"
-    dominant-baseline="central"
+    dominant-baseline="middle"
     font-family="Georgia, 'Times New Roman', serif"
     font-weight="700"
-    font-size="46"
+    font-size="34"
     fill="#d4af37"
   >9</text>
 </svg>
