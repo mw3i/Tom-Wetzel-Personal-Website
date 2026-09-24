@@ -55,6 +55,19 @@ export default function SeminarsPage() {
         )}
       </Section>
 
+      {bio.speaking.testimonial && (
+        <div className="border-b border-line bg-navy">
+          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
+            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
+              &ldquo;{bio.speaking.testimonial.quote}&rdquo;
+            </p>
+            <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
+              {bio.speaking.testimonial.author}
+            </p>
+          </div>
+        </div>
+      )}
+
       <Section variant="surface">
         <div className="max-w-xl">
           <h2 className="prose-heading text-3xl text-ink sm:text-4xl">

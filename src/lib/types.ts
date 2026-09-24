@@ -67,6 +67,10 @@ export interface Bio {
   speaking: {
     summary: string;
     highlights?: SpeakingHighlight[];
+    testimonial?: {
+      quote: string;
+      author: string;
+    };
   };
   timeline: TimelineEntry[];
 }

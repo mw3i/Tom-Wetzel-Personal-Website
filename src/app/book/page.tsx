@@ -85,7 +85,7 @@ export default function BookPage() {
       )}
 
       {coverArt && (
-        <Section variant="surface">
+        <Section variant="base">
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-sm shadow-lg shadow-ink/10">
             <Image
               src={coverArt}

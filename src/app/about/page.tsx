@@ -57,6 +57,10 @@ const offDuty = [
     imageKey: "about-governor-visit",
     caption: undefined,
   },
+  {
+    imageKey: "about-news-interview",
+    caption: undefined,
+  },
 ] as const;
 
 export default function AboutPage() {
