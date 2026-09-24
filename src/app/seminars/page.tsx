@@ -24,7 +24,7 @@ export default function SeminarsPage() {
         <h1 className="prose-heading mt-4 text-4xl leading-tight text-paper sm:text-5xl">
           Leadership Seminars
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper">
           {bio.speaking.summary}
         </p>
       </PhotoBand>
