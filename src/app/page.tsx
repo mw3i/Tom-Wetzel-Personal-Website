@@ -48,7 +48,7 @@ export default function Home() {
               {book.buyLabel}
             </a>
           </div>
-          <div className="order-1 mx-auto w-full max-w-xs sm:order-2 sm:max-w-none">
+          <div className="order-1 mx-auto w-full max-w-xs sm:order-2 sm:max-w-[340px]">
             <BookCover book={book} />
           </div>
         </div>
