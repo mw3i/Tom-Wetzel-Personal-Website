@@ -29,6 +29,20 @@ export default function SeminarsPage() {
         </p>
       </PhotoBand>
 
+      {bio.speaking.testimonial && (
+        <div className="bg-navy">
+          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
+            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
+              &ldquo;{bio.speaking.testimonial.quote}&rdquo;
+            </p>
+            <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
+              {bio.speaking.testimonial.author}
+            </p>
+          </div>
+          <hr className="mx-auto w-2/5 border-line" />
+        </div>
+      )}
+
       <Section>
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
           <div className="grid gap-x-12 gap-y-10 sm:grid-cols-2">
@@ -53,19 +67,6 @@ export default function SeminarsPage() {
           </div>
         )}
       </Section>
-
-      {bio.speaking.testimonial && (
-        <div className="border-b border-line bg-navy">
-          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
-            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
-              &ldquo;{bio.speaking.testimonial.quote}&rdquo;
-            </p>
-            <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
-              {bio.speaking.testimonial.author}
-            </p>
-          </div>
-        </div>
-      )}
 
       <Section variant="surface">
         <div className="max-w-xl">
