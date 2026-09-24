@@ -19,20 +19,19 @@ export default function SeminarsPage() {
 
   return (
     <>
-      <PhotoBand imageKey="hero-about" alt="" minHeight="xsmall" align="start">
+      <PhotoBand imageKey="hero-about" alt="" minHeight="small" align="start">
         <p className="section-label-onDark">Speaking &amp; Consulting</p>
         <h1 className="prose-heading mt-4 text-4xl leading-tight text-paper sm:text-5xl">
           Leadership Seminars
         </h1>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-soft">
+          {bio.speaking.summary}
+        </p>
       </PhotoBand>
 
       <Section>
-        <p className="max-w-2xl text-lg leading-relaxed text-ink-soft">
-          {bio.speaking.summary}
-        </p>
-
         {bio.speaking.highlights && bio.speaking.highlights.length > 0 && (
-          <div className="mt-16 grid gap-x-12 gap-y-10 sm:grid-cols-2">
+          <div className="grid gap-x-12 gap-y-10 sm:grid-cols-2">
             {/*
               Each highlight is one flex-column item (photo, then caption),
               so mobile order is correct by construction. Grid's default
