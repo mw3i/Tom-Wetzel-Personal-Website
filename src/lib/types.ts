@@ -67,6 +67,11 @@ export interface Bio {
   speaking: {
     summary: string;
     highlights?: SpeakingHighlight[];
+    /** Public Facebook video/reel, embedded beside the testimonial. */
+    video?: {
+      url: string;
+      title: string;
+    };
     testimonial?: {
       quote: string;
       author: string;

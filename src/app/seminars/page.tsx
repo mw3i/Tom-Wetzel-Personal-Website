@@ -16,6 +16,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function SeminarsPage() {
   const bio = getBio();
+  const video = bio.speaking.video;
 
   return (
     <>
@@ -31,13 +32,43 @@ export default function SeminarsPage() {
 
       {bio.speaking.testimonial && (
         <div className="bg-navy">
-          <div className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
-            <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
-              &ldquo;{bio.speaking.testimonial.quote}&rdquo;
-            </p>
-            <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
-              {bio.speaking.testimonial.author}
-            </p>
+          <div
+            className={`mx-auto max-w-5xl px-6 py-14 sm:py-20 ${
+              video
+                ? "grid items-center gap-10 sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-14"
+                : "max-w-3xl text-center"
+            }`}
+          >
+            {video && (
+              <div className="mx-auto w-full max-w-[280px]">
+                <div className="relative aspect-[9/16] w-full overflow-hidden rounded-sm bg-navy-deep shadow-lg shadow-ink/20">
+                  <iframe
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video.url)}&show_text=false&width=280&height=498`}
+                    title={video.title}
+                    loading="lazy"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full border-0"
+                  />
+                </div>
+                <a
+                  href={video.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 block text-center text-xs uppercase tracking-[0.15em] text-badge-light transition-colors hover:text-ink"
+                >
+                  Watch on Facebook
+                </a>
+              </div>
+            )}
+            <div className={video ? "text-center sm:text-left" : ""}>
+              <p className="font-display text-2xl italic leading-snug text-ink sm:text-3xl">
+                &ldquo;{bio.speaking.testimonial.quote}&rdquo;
+              </p>
+              <p className="mt-4 text-sm uppercase tracking-[0.15em] text-steel">
+                {bio.speaking.testimonial.author}
+              </p>
+            </div>
           </div>
           <hr className="mx-auto w-2/5 border-line" />
         </div>
