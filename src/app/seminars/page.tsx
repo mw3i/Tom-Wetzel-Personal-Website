@@ -35,15 +35,15 @@ export default function SeminarsPage() {
           <div
             className={`mx-auto max-w-5xl px-6 py-14 sm:py-20 ${
               video
-                ? "grid items-center gap-10 sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-14"
+                ? "grid items-center gap-10 sm:grid-cols-2 sm:gap-14"
                 : "max-w-3xl text-center"
             }`}
           >
             {video && (
-              <div className="mx-auto w-full max-w-[280px]">
-                <div className="relative aspect-[9/16] w-full overflow-hidden rounded-sm bg-navy-deep shadow-lg shadow-ink/20">
+              <div className="w-full">
+                <div className="relative aspect-video w-full overflow-hidden rounded-sm bg-navy-deep shadow-lg shadow-ink/20">
                   <iframe
-                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video.url)}&show_text=false&width=280&height=498`}
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video.url)}&show_text=false&width=560&height=315`}
                     title={video.title}
                     loading="lazy"
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"

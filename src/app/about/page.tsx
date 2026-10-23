@@ -61,6 +61,14 @@ const offDuty = [
     imageKey: "about-news-interview",
     caption: undefined,
   },
+  {
+    imageKey: "about-img-7560",
+    caption: undefined,
+  },
+  {
+    imageKey: "about-img-7544",
+    caption: undefined,
+  },
 ] as const;
 
 export default function AboutPage() {
