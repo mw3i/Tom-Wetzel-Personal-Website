@@ -12,7 +12,7 @@ import { createPageMetadata } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "Home",
   description:
-    "Tom Wetzel is the Chief of Police for University Circle, Ohio, and author of \"A Cop and a Coffee Cup.\"",
+    "Tom Wetzel is a police chief in Northeast Ohio and author of \"A Cop and a Coffee Cup.\"",
   path: "/",
 });
 

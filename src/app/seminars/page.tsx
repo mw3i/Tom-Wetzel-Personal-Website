@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "Leadership Seminars",
   description:
-    "Speaking engagements and leadership consulting with Tom Wetzel, Chief of Police for University Circle, Ohio.",
+    "Speaking engagements and leadership consulting with Tom Wetzel, a police chief in Northeast Ohio.",
   path: "/seminars",
 });
 
